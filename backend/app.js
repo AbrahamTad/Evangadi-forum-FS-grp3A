@@ -8,7 +8,10 @@ const cors = require("cors");
 // Enable CORS
 app.use(
   cors({
-    origin: ["http://localhost:5173"], // Replace with frontend domain in production or Add Render URL for production
+    origin: [
+      "http://localhost:5173",
+      "https://evangadi-forum-fs-grp3-a-x6lw.vercel.app/",
+    ], // Replace with frontend domain in production or Add Render URL for production
   })
 );
 
@@ -35,9 +38,9 @@ app.use("/api/questions", authMiddleware, questionRoute);
 app.use("/api", authMiddleware, answerRoute);
 
 // Serve React app for unmatched routes (catch-all route)
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "dist", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "dist", "index.html"));
+// });
 
 // Start server
 async function start() {
