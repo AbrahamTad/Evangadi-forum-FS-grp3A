@@ -7,12 +7,12 @@ const cors = require("cors");
 
 // Enable CORS
 app.use(
-  cors({
-    origin: [
+  cors(
+    (origins = [
       "http://localhost:5173",
       "https://evangadi-forum-fs-grp3-a-x6lw.vercel.app/",
-    ], // Replace with frontend domain in production or Add Render URL for production
-  })
+    ]) // Replace with frontend domain in production or Add Render URL for production
+  )
 );
 
 // Serve static files from React app (Vite or create-react-app)
@@ -42,6 +42,11 @@ app.use("/api", authMiddleware, answerRoute);
 //   res.sendFile(path.resolve(__dirname, "dist", "index.html"));
 // });
 
+// test get request
+app.get("/", (req, res) => {
+  res.status(200).send("welcome-to Evangadi-");
+});
+
 // Start server
 async function start() {
   try {
@@ -51,7 +56,7 @@ async function start() {
 
     app.listen(port, () => {
       console.log("Database connection established");
-      console.log(`Server is running on http://localhost:${port}`);
+      console.log(`server running and listening on port:${port}`);
     });
   } catch (error) {
     console.error("Error starting the server:", error.message);
