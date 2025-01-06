@@ -19,7 +19,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // Local development frontend URL
-      "https://evangadi-forum-fs-grp3-a.vercel.app/", // Production frontend URL on Vercel
+      "https://evangadi-forum-fs-grp3-1ey7l0fbm-abos-projects-bc73bec0.vercel.app/", // Production frontend URL on Vercel
     ],
     methods: ["GET", "POST"], // Allowing GET and POST methods
   })
