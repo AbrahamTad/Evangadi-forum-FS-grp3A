@@ -15,7 +15,7 @@ const axiosBase = axios.create({
   // baseURL: "http://localhost:5000/api",
 
   // For production on Render:
-  baseURL: "https://evangadi-forum-fs-grp3a.onrender.com/api/users",
+  baseURL: "https://evangadi-forum-fs-grp3a.onrender.com/api",
 });
 
 export default axiosBase;
