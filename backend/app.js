@@ -6,13 +6,23 @@ const port = process.env.PORT || 5000;
 const cors = require("cors");
 
 // Enable CORS
+// app.use(
+//   cors(
+//     (origins = [
+//       "http://localhost:5173",
+//       "https://evangadi-forum-fs-grp3-a-x6lw.vercel.app/",
+//     ]) // Replace with frontend domain in production or Add Render URL for production
+//   )
+// );
+
 app.use(
-  cors(
-    (origins = [
-      "http://localhost:5173",
-      "https://evangadi-forum-fs-grp3-a-x6lw.vercel.app/",
-    ]) // Replace with frontend domain in production or Add Render URL for production
-  )
+  cors({
+    origin: [
+      "http://localhost:5173", // Local development frontend URL
+      "https://your-frontend-url.vercel.app", // Production frontend URL on Vercel
+    ],
+    methods: ["GET", "POST"], // Allowing GET and POST methods
+  })
 );
 
 // Serve static files from React app (Vite or create-react-app)
