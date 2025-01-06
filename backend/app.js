@@ -10,7 +10,7 @@ app.use(
   cors(
     (origins = [
       "http://localhost:5173",
-      "https://evangadi-forum-fs-grp3-a-x6lw.vercel.app/",
+      "https://evangadi-forum-fs-grp3-a.vercel.app//",
     ]) // Replace with frontend domain in production or Add Render URL for production
   )
 );
