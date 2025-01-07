@@ -12,7 +12,7 @@ import axios from "axios";
 // Set the base URL for  Axios requests
 const axiosBase = axios.create({
   // For local development:
-  // baseURL: "http://localhost:5000/api",
+  baseURL: "http://localhost:5000/api",
 
   // For production on Render:
   baseURL: "https://evangadi-forum-fs-grp3a.onrender.com/api",
