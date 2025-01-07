@@ -74,7 +74,8 @@
     "mostRecent": "Most Recent",
     "mostPopular": "Most Popular",
     "byQuestions": "By Questions",
-    "byDate": "By Date"
+    "byDate": "By Date",
+    "showComments": "Show Comments"
   },
 
   "nav": {
@@ -90,13 +91,11 @@
   },
 
   "landing": {
-
-     "about": "About",
+    "about": "About",
     "title": "Evangadi Networks",
     "description1": "No matter what stage of life you are in, whether you’re just starting elementary school or being promoted to CEO of a Fortune 500 company, you have much to offer to those who are trying to follow in your footsteps.",
     "description2": "Whether you are willing to share your knowledge or you are just looking to meet mentors of your own, please start by joining the network here.",
     "howItWorksButton": "HOW IT WORKS"
-           
   },
   "register": {
     "joinNetwork": "Join the network",
@@ -113,33 +112,38 @@
     "submit": "Agree and Join"
   },
   "login": {
-    "loginHeading": "Login to your account",
     "noAccount": "Don’t have an account?",
-    "createAccount": "Create a new account",
+    "createAccount": "Sign up here",
+    "errorTitle": "Missing Information",
+    "error": "Please enter both email and password.",
+    "successTitle": "Login Successful",
+    "success": "Welcome back!",
+    "failureTitle": "Login Failed",
+    "failure": "Invalid email or password. Please try again.",
+    "loginHeading": "Login to Your Account",
     "placeholders": {
-      "email": "Email address",
-      "password": "Password"
+      "email": "Enter your email",
+      "password": "Enter your password"
     },
-    "forgotPassword": "Forgot password?",
     "loginButton": "Login",
-    "error": "Please provide all required information",
-    "success": "Login successful",
-    "failure": "Login failed. Please check your credentials"
+    "forgotPassword": "Forgot Password?"
+  },
+  "forgotPassword": {
+    "errorTitle": "Reset Error",
+    "error": "Please provide your email.",
+    "successTitle": "Reset Successful",
+    "success": "Password reset instructions sent to your email.",
+    "failureTitle": "Reset Failed",
+    "failure": "Unable to process your request. Please try again.",
+    "heading": "Forgot Password?",
+    "instructions": "Enter your email to reset your password.",
+    "placeholders": {
+      "email": "Enter your email"
+    },
+    "resetButton": "Reset Password",
+    "backToLogin": "Back to Login"
   },
   "header": {
     "language": "Language"
-  },
-
-  "forgotPassword": {
-      "heading": "Reset Your Password",
-      "instructions": "Enter your email address below, and we’ll send you a link to reset your password.",
-      "placeholders": {
-        "email": "Email address"
-      },
-      "resetButton": "Reset Password",
-      "backToLogin": "Back to Login",
-      "error": "Please enter a valid email address.",
-      "success": "Password reset link sent successfully. Check your email.",
-      "failure": "Failed to send reset link. Please try again later."
-    }
+  }
 }

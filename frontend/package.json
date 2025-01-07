@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.3.1",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
@@ -30,7 +31,7 @@
     "react-toastify": "^11.0.2",
     "redux": "^5.0.1",
     "style-loader": "^4.0.0",
-    "sweetalert2": "^11.15.2",
+    "sweetalert2": "^11.15.10",
     "yup": "^1.6.1"
   },
   "devDependencies": {

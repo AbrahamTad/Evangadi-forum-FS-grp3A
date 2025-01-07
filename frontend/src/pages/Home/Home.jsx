@@ -1,4 +1,3 @@
-
 import React, { useContext, useEffect, useState } from "react";
 import { AppState } from "../../App";
 import { Link, useNavigate } from "react-router-dom";
@@ -228,7 +227,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
-

@@ -1,5 +1,3 @@
-
-
 // import React, { useRef, useState } from "react";
 // import { useNavigate } from "react-router-dom";
 // import axios from "../../Api/axiosConfig";
@@ -95,7 +93,7 @@
 // };
 
 // export default Ask;
-
+////**** */
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "../../Api/axiosConfig";
@@ -138,7 +136,6 @@ const Ask = () => {
       setTimeout(() => {
         navigate("/home");
       }, 2000);
-
     } catch (error) {
       alert(error);
       console.log(error);
